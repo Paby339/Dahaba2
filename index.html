@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amicale des Étudiants</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        footer {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site de l'Amicale des Étudiants</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#evenements">Événements</a></li>
+                <li><a href="#adhesion">Adhésion</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="accueil">
+        <h2>Qui sommes-nous ?</h2>
+        <p>L'amicale des étudiants est une association qui vise à renforcer les liens entre étudiants...</p>
+    </section>
+    
+    <section id="evenements">
+        <h2>Événements à venir</h2>
+        <ul>
+            <li>Soirée d'intégration - 20 mars</li>
+            <li>Conférence sur l'orientation - 25 mars</li>
+            <li>Sortie culturelle - 30 mars</li>
+        </ul>
+    </section>
+    
+    <section id="adhesion">
+        <h2>Rejoignez-nous</h2>
+        <form>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Adhérer</button>
+        </form>
+    </section>
+    
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <p>Photos des événements passés.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Amicale des Étudiants</p>
+    </footer>
+</body>
+</html>
